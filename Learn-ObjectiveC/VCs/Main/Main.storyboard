@@ -46,6 +46,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="ddD-9t-gRm">
                         <barButtonItem key="backBarButtonItem" title=" " id="Ld0-sL-Jll"/>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="Syq-UH-he7">
+                            <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="didTapOnLogout:" destination="BYZ-38-t0r" id="7hl-Zf-unb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

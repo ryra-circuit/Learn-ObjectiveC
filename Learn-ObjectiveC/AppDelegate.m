@@ -38,4 +38,12 @@
 }
 
 
+- (void)setAsRoot:(UIViewController *)controller {
+    
+    if (self.window != nil) {
+        self.window.rootViewController = controller;
+    }
+}
+
+
 @end
