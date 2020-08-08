@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B07E97224DDC67E001F579A /* ForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07E97124DDC67E001F579A /* ForgotPasswordVC.m */; };
+		8B07E97624DE5E85001F579A /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07E97524DE5E85001F579A /* BaseVC.m */; };
 		8B1A3A3024D73A2400498F64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A3A2F24D73A2400498F64 /* AppDelegate.m */; };
 		8B1A3A3324D73A2400498F64 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A3A3224D73A2400498F64 /* SceneDelegate.m */; };
 		8B1A3A3B24D73A2A00498F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1A3A3A24D73A2A00498F64 /* Assets.xcassets */; };
@@ -46,6 +47,8 @@
 /* Begin PBXFileReference section */
 		8B07E97024DDC67E001F579A /* ForgotPasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordVC.h; sourceTree = "<group>"; };
 		8B07E97124DDC67E001F579A /* ForgotPasswordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordVC.m; sourceTree = "<group>"; };
+		8B07E97424DE5E85001F579A /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		8B07E97524DE5E85001F579A /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		8B1A3A2B24D73A2400498F64 /* Learn-ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn-ObjectiveC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1A3A2E24D73A2400498F64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		8B1A3A2F24D73A2400498F64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +107,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B07E97324DE5E74001F579A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8B07E97424DE5E85001F579A /* BaseVC.h */,
+				8B07E97524DE5E85001F579A /* BaseVC.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8B07E97724DE709F001F579A /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
 		8B1A3A2224D73A2400498F64 = {
 			isa = PBXGroup;
 			children = (
@@ -177,8 +196,10 @@
 		8BE1577724D820E20057EB4C /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				8B07E97324DE5E74001F579A /* Base */,
 				8BE157A024D82D410057EB4C /* Auth */,
 				8BE1579F24D82D320057EB4C /* Main */,
+				8B07E97724DE709F001F579A /* DataSources */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -381,6 +402,7 @@
 				8B07E97224DDC67E001F579A /* ForgotPasswordVC.m in Sources */,
 				8BE1579324D82A840057EB4C /* TPKeyboardAvoidingScrollView.m in Sources */,
 				8BE157A924D82E180057EB4C /* LoginVC.m in Sources */,
+				8B07E97624DE5E85001F579A /* BaseVC.m in Sources */,
 				8BE1579424D82A840057EB4C /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				8BE157AF24D860B40057EB4C /* HomeVC.m in Sources */,
 				8B1A3A3024D73A2400498F64 /* AppDelegate.m in Sources */,

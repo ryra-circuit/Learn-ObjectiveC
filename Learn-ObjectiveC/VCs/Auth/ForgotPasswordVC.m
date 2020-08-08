@@ -33,4 +33,15 @@
     
 }
 
+
+#pragma mark - Handle TextField return action
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    if (textField == self.tfEmail) {
+        [self.tfEmail resignFirstResponder];
+    }
+    
+    return YES;
+}
+
 @end

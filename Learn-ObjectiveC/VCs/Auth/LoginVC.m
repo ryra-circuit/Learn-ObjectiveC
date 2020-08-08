@@ -8,8 +8,6 @@
 
 #import "LoginVC.h"
 #import "AppDetailsVC.h"
-#import "AppDelegate.h"
-#import "SceneDelegate.h"
 
 @interface LoginVC ()
 
@@ -17,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *tfPassword;
 
 @end
+
 
 @implementation LoginVC
 
@@ -34,48 +33,16 @@
 
 
 - (IBAction)didTapOnForgot:(UIButton *)sender {
-    printf("**** TAPPED LOGIN");
+    printf("**** TAPPED FORGOT");
     
-    [self pushToRetrivePassword];
-}
-
-- (void)pushToRetrivePassword {
-    printf("**** GO TO FORGOT PASSWORD WITH BUTTON ACTION");
-    
-    UIStoryboard *sb = [UIStoryboard storyboardWithName: @"Auth" bundle: nil];
-    UIViewController *vc = [sb instantiateViewControllerWithIdentifier: @"ForgotPasswordVC"];
-    
-    [self.navigationController pushViewController: vc animated: YES];
+    [self pushToViewController:@"Auth" :@"ForgotPasswordVC"];
 }
 
 
 - (IBAction)didTapOnLogin:(UIButton *)sender {
     printf("**** TAPPED LOGIN");
     
-    [self directToHome];
-}
-
-- (void)directToHome {
-    printf("**** DIRECT TO HOME WITH BUTTON ACTION");
-    
-    UIStoryboard *sb = [UIStoryboard storyboardWithName: @"Main" bundle: nil];
-    UINavigationController *nc = [sb instantiateViewControllerWithIdentifier: @"HomeNC"];
-    nc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-    
-    [self presentViewController: nc animated: YES completion: nil];
-    
-    /*if (@available(iOS 13.0, *)) {
-        SceneDelegate *sceneDelegate = (SceneDelegate *)[UIApplication sharedApplication];
-
-        sceneDelegate.window.rootViewController = nc;
-        [sceneDelegate.window makeKeyAndVisible];
-
-    } else {
-        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-
-        appDelegate.window.rootViewController = nc;
-        [appDelegate.window makeKeyAndVisible];
-    }*/
+    [self directToPath:@"Main" :@"HomeNC"];
 }
 
 
@@ -92,6 +59,19 @@
     vc._type = type;
     
     [self presentViewController: vc animated: YES completion: nil];
+}
+
+
+#pragma mark - Handle TextField return action
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    if (textField == self.tfEmail) {
+        [self.tfPassword becomeFirstResponder];
+    } else if (textField == self.tfPassword) {
+        [self.tfPassword resignFirstResponder];
+    }
+    
+    return YES;
 }
 
 @end

@@ -10,6 +10,8 @@
 
 @interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
 
+- (void)setAsRoot:(UIViewController *)rootViewController;
+
 @property (strong, nonatomic) UIWindow * window;
 
 @end

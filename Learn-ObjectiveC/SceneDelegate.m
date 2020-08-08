@@ -47,10 +47,12 @@
 }
 
 
-- (void)setAsRoot:(UIViewController *)controller {
+#pragma mark - Set Root ViewController
+- (void)setAsRoot:(UIViewController *)rootViewController {
     
     if (self.window != nil) {
-        self.window.rootViewController = controller;
+        self.window.rootViewController = rootViewController;
+        [self.window makeKeyAndVisible];
     }
 }
 
