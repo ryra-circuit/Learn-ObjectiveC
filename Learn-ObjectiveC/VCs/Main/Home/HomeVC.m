@@ -26,4 +26,45 @@
     [self directToPath:@"Auth" :@"AuthNC"];
 }
 
+
+- (IBAction)didTapOnItem:(UIButton *)sender {
+
+    switch (sender.tag) {
+        case 1:
+            [self pushToViewController:@"DataSource" :@"TableViewVC"];
+            break;
+            
+        case 2:
+            [self pushToViewController:@"DataSource" :@"CollectionViewVC"];
+            break;
+            
+        case 3:
+            break;
+            
+        case 4:
+            break;
+            
+        case 5:
+            break;
+            
+        case 6:
+            break;
+            
+        case 7:
+            break;
+            
+        case 8:
+            break;
+            
+        case 9:
+            break;
+            
+        case 10:
+            break;
+            
+        default:
+            break;
+    }
+}
+
 @end

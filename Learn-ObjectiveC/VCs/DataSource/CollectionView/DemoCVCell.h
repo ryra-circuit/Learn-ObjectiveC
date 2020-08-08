@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewsItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DemoCVCell : UICollectionViewCell
+
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+@property (weak, nonatomic) IBOutlet UILabel *lblContent;
+
+-(void)configureCell: (NewsItem *)model;
 
 @end
 

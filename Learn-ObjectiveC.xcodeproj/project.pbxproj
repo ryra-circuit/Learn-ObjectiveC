@@ -14,6 +14,7 @@
 		8B07E98024DF13A4001F579A /* CollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07E97F24DF13A4001F579A /* CollectionViewVC.m */; };
 		8B07E98324DF141B001F579A /* DemoTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07E98224DF141B001F579A /* DemoTVCell.m */; };
 		8B07E98624DF1442001F579A /* DemoCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07E98524DF1442001F579A /* DemoCVCell.m */; };
+		8B07E99024DF1A2B001F579A /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07E98F24DF1A2B001F579A /* NewsItem.m */; };
 		8B1A3A3024D73A2400498F64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A3A2F24D73A2400498F64 /* AppDelegate.m */; };
 		8B1A3A3324D73A2400498F64 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A3A3224D73A2400498F64 /* SceneDelegate.m */; };
 		8B1A3A3B24D73A2A00498F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1A3A3A24D73A2A00498F64 /* Assets.xcassets */; };
@@ -63,6 +64,8 @@
 		8B07E98224DF141B001F579A /* DemoTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTVCell.m; sourceTree = "<group>"; };
 		8B07E98424DF1442001F579A /* DemoCVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCVCell.h; sourceTree = "<group>"; };
 		8B07E98524DF1442001F579A /* DemoCVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCVCell.m; sourceTree = "<group>"; };
+		8B07E98E24DF1A2B001F579A /* NewsItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsItem.h; sourceTree = "<group>"; };
+		8B07E98F24DF1A2B001F579A /* NewsItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
 		8B1A3A2B24D73A2400498F64 /* Learn-ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn-ObjectiveC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1A3A2E24D73A2400498F64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		8B1A3A2F24D73A2400498F64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
@@ -198,6 +201,15 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		8B07E98D24DF19B6001F579A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B07E98E24DF1A2B001F579A /* NewsItem.h */,
+				8B07E98F24DF1A2B001F579A /* NewsItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8B1A3A2224D73A2400498F64 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +238,7 @@
 				8BE1577924D829420057EB4C /* SupportFiles */,
 				8BE1577524D820B80057EB4C /* Application */,
 				8BE1577724D820E20057EB4C /* VCs */,
+				8B07E98D24DF19B6001F579A /* Models */,
 				8BE1577624D820D20057EB4C /* Assets */,
 			);
 			path = "Learn-ObjectiveC";
@@ -472,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B07E97224DDC67E001F579A /* ForgotPasswordVC.m in Sources */,
+				8B07E99024DF1A2B001F579A /* NewsItem.m in Sources */,
 				8B07E97D24DF138C001F579A /* TableViewVC.m in Sources */,
 				8BE1579324D82A840057EB4C /* TPKeyboardAvoidingScrollView.m in Sources */,
 				8BE157A924D82E180057EB4C /* LoginVC.m in Sources */,

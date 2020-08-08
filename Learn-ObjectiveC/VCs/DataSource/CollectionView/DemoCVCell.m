@@ -10,4 +10,15 @@
 
 @implementation DemoCVCell
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+}
+
+-(void)configureCell: (NewsItem *)model {
+    
+    self.lblTitle.text = model.title;
+    self.lblContent.text = model.content;
+}
+
 @end
