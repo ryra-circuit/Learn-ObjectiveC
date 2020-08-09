@@ -31,6 +31,7 @@
 		8BE157A924D82E180057EB4C /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE157A824D82E180057EB4C /* LoginVC.m */; };
 		8BE157AC24D85C620057EB4C /* AppDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE157AB24D85C620057EB4C /* AppDetailsVC.m */; };
 		8BE157AF24D860B40057EB4C /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE157AE24D860B40057EB4C /* HomeVC.m */; };
+		8BFA567224DFE95200DBAD6E /* NewsDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA567124DFE95200DBAD6E /* NewsDetailsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		8BE157AB24D85C620057EB4C /* AppDetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDetailsVC.m; sourceTree = "<group>"; };
 		8BE157AD24D860B40057EB4C /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		8BE157AE24D860B40057EB4C /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		8BFA567024DFE95200DBAD6E /* NewsDetailsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailsVC.h; sourceTree = "<group>"; };
+		8BFA567124DFE95200DBAD6E /* NewsDetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailsVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,7 @@
 				8B07E97924DF1108001F579A /* DataSource.storyboard */,
 				8B07E98B24DF1494001F579A /* TableView */,
 				8B07E98C24DF149D001F579A /* CollectionView */,
+				8BFA567324DFE95A00DBAD6E /* NewsDetails */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -352,6 +356,15 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		8BFA567324DFE95A00DBAD6E /* NewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA567024DFE95200DBAD6E /* NewsDetailsVC.h */,
+				8BFA567124DFE95200DBAD6E /* NewsDetailsVC.m */,
+			);
+			path = NewsDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -500,6 +513,7 @@
 				8BE1579224D82A840057EB4C /* TPKeyboardAvoidingTableView.m in Sources */,
 				8B1A3A3324D73A2400498F64 /* SceneDelegate.m in Sources */,
 				8BE1579124D82A840057EB4C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				8BFA567224DFE95200DBAD6E /* NewsDetailsVC.m in Sources */,
 				8BE157AC24D85C620057EB4C /* AppDetailsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

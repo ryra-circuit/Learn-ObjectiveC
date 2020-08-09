@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseVC.h"
 #import "NewsItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CollectionViewVC : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface CollectionViewVC : BaseVC <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+
+@property UIEdgeInsets sectionInsets;
+@property int itemsPerRow;
 
 @property NSMutableArray *newsList;
 

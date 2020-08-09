@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseVC.h"
 #import "NewsItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TableViewVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface TableViewVC : BaseVC <UITableViewDataSource, UITableViewDelegate>
 
 @property NSMutableArray *newsList;
 
