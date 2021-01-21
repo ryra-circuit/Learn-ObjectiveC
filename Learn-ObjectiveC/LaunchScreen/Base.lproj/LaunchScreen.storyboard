@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xtg-q6-2QR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xtg-q6-2QR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,6 +18,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn-ObjectiveC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJf-KB-Obv">
                                 <rect key="frame" x="40" y="433.5" width="334" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn from the scratch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXG-BO-5K5">
+                                <rect key="frame" x="20" y="482.5" width="374" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -39,11 +45,14 @@
                             <constraint firstItem="laG-07-7Xm" firstAttribute="centerX" secondItem="pOA-eU-ACH" secondAttribute="centerX" id="5mt-Dm-FjX"/>
                             <constraint firstItem="pOA-eU-ACH" firstAttribute="top" secondItem="laG-07-7Xm" secondAttribute="bottom" constant="20" id="8Hj-rc-aU9"/>
                             <constraint firstItem="eUG-IZ-gmC" firstAttribute="bottom" secondItem="pOA-eU-ACH" secondAttribute="bottom" constant="20" id="BHX-My-jot"/>
+                            <constraint firstItem="eUG-IZ-gmC" firstAttribute="trailing" secondItem="xXG-BO-5K5" secondAttribute="trailing" constant="20" id="EgR-he-ZUP"/>
+                            <constraint firstItem="xXG-BO-5K5" firstAttribute="top" secondItem="eJf-KB-Obv" secondAttribute="bottom" constant="20" id="KvU-qI-GNz"/>
                             <constraint firstItem="pOA-eU-ACH" firstAttribute="centerX" secondItem="Nc4-iH-QxB" secondAttribute="centerX" id="MeX-aw-KCP"/>
                             <constraint firstItem="eJf-KB-Obv" firstAttribute="centerX" secondItem="Nc4-iH-QxB" secondAttribute="centerX" id="Ovv-XH-VbD"/>
                             <constraint firstItem="eJf-KB-Obv" firstAttribute="centerY" secondItem="Nc4-iH-QxB" secondAttribute="centerY" id="jOq-By-LhN"/>
                             <constraint firstItem="eUG-IZ-gmC" firstAttribute="trailing" secondItem="eJf-KB-Obv" secondAttribute="trailing" constant="40" id="ldn-Bi-Qje"/>
                             <constraint firstItem="eJf-KB-Obv" firstAttribute="leading" secondItem="eUG-IZ-gmC" secondAttribute="leading" constant="40" id="rSm-J1-p0L"/>
+                            <constraint firstItem="xXG-BO-5K5" firstAttribute="leading" secondItem="Nc4-iH-QxB" secondAttribute="leading" constant="20" id="vFF-4K-E5c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eUG-IZ-gmC"/>
                     </view>
