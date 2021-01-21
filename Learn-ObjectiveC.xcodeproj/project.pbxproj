@@ -30,8 +30,8 @@
 		8BE157A624D82DC90057EB4C /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE157A524D82DC90057EB4C /* Auth.storyboard */; };
 		8BE157A924D82E180057EB4C /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE157A824D82E180057EB4C /* LoginVC.m */; };
 		8BE157AC24D85C620057EB4C /* AppDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE157AB24D85C620057EB4C /* AppDetailsVC.m */; };
+		8BE157AF24D860B40057EB4C /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE157AE24D860B40057EB4C /* HomeVC.m */; };
 		8BFA567224DFE95200DBAD6E /* NewsDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA567124DFE95200DBAD6E /* NewsDetailsVC.m */; };
-		8BFA567524E982E400DBAD6E /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA567424E982E400DBAD6E /* HomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,9 +97,9 @@
 		8BE157AA24D85C620057EB4C /* AppDetailsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDetailsVC.h; sourceTree = "<group>"; };
 		8BE157AB24D85C620057EB4C /* AppDetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDetailsVC.m; sourceTree = "<group>"; };
 		8BE157AD24D860B40057EB4C /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		8BE157AE24D860B40057EB4C /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		8BFA567024DFE95200DBAD6E /* NewsDetailsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailsVC.h; sourceTree = "<group>"; };
 		8BFA567124DFE95200DBAD6E /* NewsDetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailsVC.m; sourceTree = "<group>"; };
-		8BFA567424E982E400DBAD6E /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				8BE157AD24D860B40057EB4C /* HomeVC.h */,
-				8BFA567424E982E400DBAD6E /* HomeVC.m */,
+				8BE157AE24D860B40057EB4C /* HomeVC.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -500,12 +500,12 @@
 				8B07E97224DDC67E001F579A /* ForgotPasswordVC.m in Sources */,
 				8B07E99024DF1A2B001F579A /* NewsItem.m in Sources */,
 				8B07E97D24DF138C001F579A /* TableViewVC.m in Sources */,
-				8BFA567524E982E400DBAD6E /* HomeVC.m in Sources */,
 				8BE1579324D82A840057EB4C /* TPKeyboardAvoidingScrollView.m in Sources */,
 				8BE157A924D82E180057EB4C /* LoginVC.m in Sources */,
 				8B07E97624DE5E85001F579A /* BaseVC.m in Sources */,
 				8B07E98624DF1442001F579A /* DemoCVCell.m in Sources */,
 				8BE1579424D82A840057EB4C /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				8BE157AF24D860B40057EB4C /* HomeVC.m in Sources */,
 				8B1A3A3024D73A2400498F64 /* AppDelegate.m in Sources */,
 				8B07E98324DF141B001F579A /* DemoTVCell.m in Sources */,
 				8B1A3A4124D73A2A00498F64 /* main.m in Sources */,
